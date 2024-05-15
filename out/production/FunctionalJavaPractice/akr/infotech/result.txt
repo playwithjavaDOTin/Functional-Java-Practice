@@ -1,0 +1,15 @@
+###################### INPUT DATA #####################
+[StudentRecord[name=Raj, course=Java, marks=99.0], StudentRecord[name=Raj, course=SQL, marks=44.0],
+StudentRecord[name=Raj, course=PHP, marks=55.0], StudentRecord[name=Raj, course=C, marks=77.0],
+StudentRecord[name=Raj, course=C++, marks=88.0], StudentRecord[name=Akash, course=Java, marks=99.0],
+StudentRecord[name=Akash, course=SQL, marks=44.0], StudentRecord[name=Akash, course=PHP, marks=55.0],
+StudentRecord[name=Akash, course=C, marks=77.0], StudentRecord[name=Akash, course=C++, marks=88.0],
+StudentRecord[name=Sham, course=Java, marks=66.0], StudentRecord[name=Sham, course=SQL, marks=72.0],
+StudentRecord[name=Sham, course=PHP, marks=48.0], StudentRecord[name=Sham, course=C, marks=89.0],
+StudentRecord[name=Sham, course=C++, marks=59.0]]
+
+
+############## Result : Score>80 ###########
+[StudentRecord[name=Raj, course=Java, marks=99.0],
+StudentRecord[name=Raj, course=C++, marks=88.0], StudentRecord[name=Akash, course=Java, marks=99.0],
+StudentRecord[name=Akash, course=C++, marks=88.0], StudentRecord[name=Sham, course=C, marks=89.0]]

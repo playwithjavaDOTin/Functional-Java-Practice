@@ -1,0 +1,28 @@
+package akr.infotech.groupBy;
+
+
+import akr.infotech.StudentRecord;
+import akr.infotech.StudentRecordUtil;
+
+import java.util.Comparator;
+import java.util.List;
+import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+
+public class GroupByDemo18 {
+    public static void main(String[] args) {
+
+        List<StudentRecord> studentRecordList = StudentRecordUtil.getStudentList();
+
+        var data=studentRecordList.stream()
+                .collect(Collectors.groupingBy(StudentRecord::name,
+                        Collectors.summingDouble(StudentRecord::marks)))
+                        .entrySet()
+                                .stream()
+                                        .max(Comparator.comparingDouble(Map.Entry::getValue)).get();
+
+        System.out.println(data);
+    }
+}
+
